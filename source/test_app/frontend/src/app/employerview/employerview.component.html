@@ -1,0 +1,18 @@
+<div class="container">
+  <h4>Enter Employer BN Number:</h4>
+  <div class="input-group">
+      <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
+        aria-describedby="search-addon" />
+      <button type="button" class="btn btn-outline-primary"><i class="fas fa-search"></i></button>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 card hoverwell" *ngFor="let employers of employers" [routerLink]="['/employerview',employers.recordID]">
+        <h3>{{employers?.employeeName}}</h3>
+        <div *ngIf="employers?.employeeSin"><b>Employee SIN:</b> {{employers?.employeeSin}}</div>
+        <div *ngIf="employers?.periodStart"><b>Period Beginning:</b> {{employers?.periodStart}}</div>
+        <div *ngIf="employers?.periodEnd"><b>Period End:</b> {{employers?.periodEnd}}</div>
+    </div>
+  </div>
+</div>

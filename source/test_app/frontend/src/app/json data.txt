@@ -1,0 +1,85 @@
+Errors:
+[
+    {
+      "errorNumber": 100,
+      "description": "Failed validation",
+      "bn": 1,
+      "paydac": 12345,
+      "name": "Acme Inc",
+      "payType": "Regular",
+      "periodStart": "01/01/2021",
+      "periodEnd": "01/13/2021",
+      "employeeSin": 123456789,
+      "employeeName": "Joe Donalds",
+      "employeeID": 123,
+      "employeeActivity": "N/A",
+      "grossPay": 20000,
+      "taxDeducted": 1000,
+      "cppContribution": 100,
+      "cppPensionEarning": 20000,
+      "eiContribution": 100,
+      "eiInsurableEarning": 20000
+    },
+    {
+      "errorNumber": 200,
+      "description": "Failed validation",
+      "bn": 2,
+      "paydac": 12345,
+      "name": "Acme Inc",
+      "payType": "Regular",
+      "periodStart": "01/01/2021",
+      "periodEnd": "01/13/2021",
+      "employeeSin": 123456789,
+      "employeeName": "Joe Donalds",
+      "employeeID": 123,
+      "employeeActivity": "N/A",
+      "grossPay": 20000,
+      "taxDeducted": 1000,
+      "cppContribution": 100,
+      "cppPensionEarning": 20000,
+      "eiContribution": 100,
+      "eiInsurableEarning": 20000
+    } 
+]
+
+Employers:
+[
+    {
+        "recordID": 1,
+        "bn": 1,
+        "paydac": 12345,
+        "name": "Acme Inc",
+        "payType": "Regular",
+        "periodStart": "01/01/2021",
+        "periodEnd": "01/13/2021",
+        "employeeSin": 123456789,
+        "employeeName": "Joe Donalds",
+        "employeeID": 123,
+        "employeeActivity": "N/A",
+        "grossPay": 20000,
+        "taxDeducted": 1000,
+        "cppContribution": 100,
+        "cppPensionEarning": 20000,
+        "eiContribution": 100,
+        "eiInsurableEarning": 20000
+    },
+    {
+        "recordID": 2,
+        "bn": 2,
+        "paydac": 12345,
+        "name": "Acme Inc",
+        "payType": "Regular",
+        "periodStart": "01/01/2021",
+        "periodEnd": "01/13/2021",
+        "employeeSin": 123456789,
+        "employeeName": "Joe Donalds",
+        "employeeID": 123,
+        "employeeActivity": "N/A",
+        "grossPay": 20000,
+        "taxDeducted": 1000,
+        "cppContribution": 100,
+        "cppPensionEarning": 20000,
+        "eiContribution": 100,
+        "eiInsurableEarning": 20000
+    }
+]

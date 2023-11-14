@@ -1,0 +1,41 @@
+<div class="container">
+    <h3>Error Details</h3>
+    
+    <div class="row">
+        <h4>Error Number: {{error?.errorNumber}}</h4>
+        <h5>Description:</h5>
+        <div>{{error?.description}}</div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+        <div class="col-md-6">
+            <div>Name: {{error?.name}}</div>
+            <div>Paydac: {{error?.paydac}}</div>
+        </div>
+        <div class="col-md-6">
+            <div>SIN: {{error?.employeeSin}}</div>
+            <div>Employee Name: {{error?.employeeName}}</div>
+            <div>Employee ID: {{error?.employeeID}}</div>
+            <div>Activity: {{error?.employeeActivity}}</div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="row">
+        <div class="col-md-6">
+            <div>Pay Type: {{error?.payType}}</div>
+            <div>Period Beginning: {{error?.periodStart}}</div>
+            <div>Period Ending: {{error?.periodEnd}}</div>
+            <div>Gross Pay: {{error?.grossPay}}</div>
+            <div>Tax Deducted: {{error?.taxDeducted}}</div>
+        </div>
+        <div class="col-md-6">
+            <div>CPP Contribution: {{error?.cppContribution}}</div>
+            <div>CPP Pensionable Earnings: {{error?.cppPensionEarning}}</div>
+            <div>EI Contribution: {{error?.eiContribution}}</div>
+            <div>EI Insurable Earning: {{error?.eiInsurableEarning}}</div>
+        </div>
+    </div>
+</div>

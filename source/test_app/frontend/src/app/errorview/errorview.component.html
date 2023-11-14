@@ -1,0 +1,10 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 card hoverwell" *ngFor="let errors of errors" [routerLink]="['/errorview',errors.errorNumber]">
+            <h3>{{errors?.name}}</h3>
+            <div *ngIf="errors?.bn"><b>Business Number:</b> {{errors?.bn}}</div>
+            <div *ngIf="errors?.paydac"><b>Paydac:</b> {{errors?.paydac}}</div>
+            <div *ngIf="errors?.description"><b>Description:</b> {{errors?.description}}</div>
+        </div>
+    </div>
+</div>

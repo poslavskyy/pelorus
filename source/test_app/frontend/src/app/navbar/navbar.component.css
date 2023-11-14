@@ -1,0 +1,10 @@
+.fixed-header {
+    text-align: center;
+    background: #0066cc;
+}
+
+button{
+    padding: 20px;
+    font-size: large;
+    width: 30%;
+}

@@ -1,0 +1,8 @@
+apiVersion: operators.coreos.com/v1
+kind: OperatorGroup
+metadata:
+  name: pelorus-operatorgroup
+  namespace: pelorus
+spec:
+  targetNamespaces:
+  - pelorus

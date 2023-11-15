@@ -1,0 +1,10 @@
+apiVersion: operators.coreos.com/v1alpha1
+kind: Subscription
+metadata:
+  name: pelorus-operator
+  namespace: pelorus
+spec:
+  channel: alpha
+  name: pelorus-operator
+  source: community-operators
+  sourceNamespace: openshift-marketplace

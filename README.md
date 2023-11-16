@@ -15,8 +15,8 @@ You can not just delete entire pelorus namespace to remove everything for some u
 It was observed that pelorus-instance gets stuck and not terminating in this scenario.
 Here is sequence to remove everything.
 
-First delete pelorus-instance
-> oc delete pelorus pelorus-instance
+First delete pelorus-instance from (-n pelorus) namespace
+> oc delete -n pelorus pelorus pelorus-instance
 
 Delete the namespace/project once above step completed
 > oc delete namespace pelorus

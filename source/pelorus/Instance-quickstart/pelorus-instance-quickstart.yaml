@@ -1,0 +1,26 @@
+apiVersion: charts.pelorus.dora-metrics.io/v1alpha1
+kind: Pelorus
+metadata:
+  name: pelorus-quickstart
+spec:
+  exporters:
+    instances:
+    - app_name: deploytime-exporter
+      exporter_type: deploytime
+      extraEnv:
+      - name: NAMESPACES
+        value: test-app,mongo-persistent
+    - app_name: committime-exporter
+      exporter_type: committime
+      extraEnv:
+      - name: NAMESPACES
+        value: mongo-persistent
+    - app_name: failure-exporter
+      exporter_type: failure
+      extraEnv:
+      - name: PROVIDER
+        value: github
+      - name: TOKEN
+        value: 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
+      - name: PROJECTS
+        value: poslavskyy/mig-demo-apps

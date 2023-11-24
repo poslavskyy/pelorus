@@ -14,8 +14,8 @@ spec:
       exporter_type: committime
       extraEnv:
       - name: NAMESPACES
-        value: mongo-persistent
-    - app_name: failure-exporter
+        value: test-app,mongo-persistent
+    - app_name: failure-exporter-mig
       exporter_type: failure
       extraEnv:
       - name: PROVIDER
@@ -24,3 +24,12 @@ spec:
         value: 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
       - name: PROJECTS
         value: poslavskyy/mig-demo-apps
+    - app_name: failure-exporter-pelorus
+      exporter_type: failure
+      extraEnv:
+      - name: PROVIDER
+        value: github
+      - name: TOKEN
+        value: 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
+      - name: PROJECTS
+        value: poslavskyy/pelorus

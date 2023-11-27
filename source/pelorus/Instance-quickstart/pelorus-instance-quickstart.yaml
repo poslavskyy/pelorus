@@ -21,7 +21,7 @@ spec:
       - name: PROVIDER
         value: github
       - name: TOKEN
-        value: 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
+        value: <GIThub token>
       - name: PROJECTS
         value: poslavskyy/mig-demo-apps
     - app_name: failure-exporter-pelorus
@@ -30,6 +30,6 @@ spec:
       - name: PROVIDER
         value: github
       - name: TOKEN
-        value: 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
+        value: <GIThub token>
       - name: PROJECTS
         value: poslavskyy/pelorus

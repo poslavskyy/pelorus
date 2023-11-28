@@ -6,18 +6,25 @@ metadata:
 spec:
   exporters:
     instances:
-      - app_name: deploytime-exporter
-        exporter_type: deploytime
-      - app_name: failuretime-exporter
-        enabled: false
-        env_from_configmaps:
-          - pelorus-config
-          - failuretime-config
-        env_from_secrets:
-          - jira-secret
-        exporter_type: failure
-      - app_name: committime-exporter
-        exporter_type: committime
+    - app_name: deploytime-exporter
+      exporter_type: deploytime
+      extraEnv:
+      - name: NAMESPACES
+        value: test-app
+    - app_name: committime-exporter
+      exporter_type: committime
+      extraEnv:
+      - name: NAMESPACES
+        value: test-app
+    - app_name: failure-exporter-pelorus
+      exporter_type: failure
+      extraEnv:
+      - name: PROVIDER
+        value: github
+      - name: TOKEN
+        value: <GIThub token>
+      - name: PROJECTS
+        value: poslavskyy/pelorus
   openshift_prometheus_basic_auth_pass: changeme
   openshift_prometheus_htpasswd_auth: 'internal:{SHA}+pvrmeQCmtWmYVOZ57uuITVghrM='
   prometheus_retention: 1y

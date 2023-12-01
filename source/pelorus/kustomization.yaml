@@ -3,6 +3,9 @@ kind: Kustomization
 
 namespace: pelorus
 
+commonLabels:
+  apps: seti
+
 bases:
 - ./Operator
 - ./Instance

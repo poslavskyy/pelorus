@@ -19,12 +19,14 @@ spec:
     - app_name: failure-exporter-pelorus
       exporter_type: failure
       extraEnv:
-      - name: PROVIDER
-        value: github
+      - name: SERVER
+        value: https://poslavskyy.atlassian.net
+      - name: API_USER
+        value: saleyuriy@gmail.com
       - name: TOKEN
-        value: <GIThub token>
+        value: TempYuriy123
       - name: PROJECTS
-        value: poslavskyy/pelorus
+        value: Pelorus
   openshift_prometheus_basic_auth_pass: changeme
   openshift_prometheus_htpasswd_auth: 'internal:{SHA}+pvrmeQCmtWmYVOZ57uuITVghrM='
   prometheus_retention: 1y

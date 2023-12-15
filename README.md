@@ -25,4 +25,4 @@ Note:
 You would have to Force terminate pelorus instance using following command if you are stuck
 > oc patch pelorus/pelorus-instance --type=merge -p '{\"metadata\": {\"finalizers\":null}}'
 
-Updated: Dec 15, 2023 @ 14.56 am
+Updated: Dec 15, 2023 @ 3.01 pm

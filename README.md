@@ -3,7 +3,7 @@ This repo is a test of **Pelorus** form  from pelorus.readthedocs.io.
 It contains **source** folder with source code for **test_app**s and **pelorus** deployment kustomization.
 Pelorus kustomization designed to create **pelorus** namespace on Openshift, deploy Pelorus **Operator** and Pelorus **Instance**.
 
-Once can alternatively deploy Pelorus instance if Operator was previously deployed by navigating to **/source/pelorus/Instance** and applying kustomization.
+One can alternatively deploy Pelorus instance if Operator was previously deployed by navigating to **/source/pelorus/Instance** and applying kustomization.
 
 ## Deploy Pelorus Operator and Pelorus Instance in one shot
 Navigate to **/source/pelorus/** and execute

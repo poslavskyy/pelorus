@@ -18,13 +18,11 @@ spec:
         value: test-app
     - app_name: failure-exporter-pelorus
       exporter_type: failure
+      env_from_secrets:
+      - jira-secret
       extraEnv:
       - name: SERVER
         value: https://poslavskyy.atlassian.net/
-      - name: API_USER
-        value: saleyuriy@gmail.com
-      - name: TOKEN
-        value: <TOKEN> like ATATT3xFfGF0zZDnDYAmx9Xi5sR9nTeXhXs4O_E3NEnHXoS5VTUrnfD05rfCbxVau0FEjrJVlKjYr2p2SXmvxQXFPYQP3MDU71q9TtQtI_oQDw5iLWKoxub4QtL7z5giC301m6ZBT_MsXqA1-aASvYbvrBZdbXDd9VkZsSJ757MT4bApQS9Zu8M=6DC6366F
       - name: PROJECTS
         value: Pelorus
   openshift_prometheus_basic_auth_pass: changeme

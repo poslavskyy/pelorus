@@ -1,0 +1,7 @@
+{
+ "app": "frontend",
+ "commit_hash": "48f9afeb208a065c2ec61cc1e6b84379f47f635a",
+ "image_sha": "sha256:53c5ef7825207f21d790417ec6fff408f1524bcc35675711f4d0c768af83a3cb",
+ "namespace": "test-app",
+ "timestamp": 1703173921
+}
